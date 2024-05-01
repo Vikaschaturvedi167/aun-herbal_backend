@@ -10,7 +10,7 @@ const mongoose = require('mongoose');
 
 
 
-router.use(authMiddleware);
+
 
 router.get('/', getAllProducts);
 router.get('/:id', getProductById);
