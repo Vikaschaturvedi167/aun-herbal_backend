@@ -1,0 +1,14 @@
+{
+    "$schema": "https://railway.app/railway.schema.json",
+    "build": {
+      "builder": "npm:@railway/npm-builder@1",
+      "buildCommand": "npm install && npm run build"
+    },
+    "deploy": {
+      "startCommand": "npm run start",
+      "healthcheckPath": "/",
+      "healthcheckTimeout": 10000,
+      "restartPolicyType": "always"
+    }
+  }
+  
